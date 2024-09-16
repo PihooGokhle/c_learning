@@ -1,9 +1,9 @@
 # include<stdio.h>
 
 int main(){
-
-    for(int a = 1 ; a <= 20 ; a = a + 1){
-        printf("Hello World\n");
+    // iterator ; counter
+    for(int i = 1 ; i <= 20  ; i = i + 1){
+        printf("%d\n",i);
     }
 
     return 0;
