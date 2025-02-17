@@ -2,9 +2,7 @@
 
 int main(){
     
-    int age;
-    const age = 17;
-    age = 20;
+    const int age = 17;
 
     printf("%d", age);
 
