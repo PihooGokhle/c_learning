@@ -1,23 +1,24 @@
 # include<stdio.h>
 
-int sum(int x, int y);
+int calculatesum(int x, int y){
+    int sum = x + y;
+    printf("Sum of x and y is %d", sum);
+    return sum;
+}
 
 int main(){
 
-    int a,b;
-    printf("Enter a: ");
-    scanf("%d", &a);
-   
-    printf("Enter b: ");
-    scanf("%d", &b);
+    int x,y;
 
-    int s = sum(a, b);
-    printf("sum of two numbers is %d", s);
+    printf("Enter x: ");
+    scanf("%d", &x);
+
+    printf("Enter y: ");
+    scanf("%d", &y);
+
+    calculatesum(x, y);
 
     return 0;
-
 }
 
-int sum(int x, int y){
-    return x + y;
-}
+ 
