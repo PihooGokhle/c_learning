@@ -1,21 +1,12 @@
 # include<stdio.h>
 
-void printstring(char array[]);
-
 int main(){
 
-    char firstname[] = "PIHOO";
-    char lastname[] = "GOKHLE";
+    char greeting[] = {"Good Morning"};
 
-    printstring(firstname);
-    printstring(lastname);
+    for(int i = 0; i < 12; ++i){
+        printf("%c\n", greeting[i]);
+    }
 
     return 0;
-
-}
-void printstring(char array[]){
-    for(int i = 0; array[i] != '\0' ; i++){
-        printf("%c", array[i]);
-    }
-    printf("\n");
 }
